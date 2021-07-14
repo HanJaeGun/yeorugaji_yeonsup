@@ -1,0 +1,198 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;600;800&display=swap");
+
+html {
+  background-color: aquamarine;
+}
+
+/* font-family 는 body 에 넣어주기! */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: whitesmoke;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px 5px;
+}
+
+/* 상태바 */
+.status-bar {
+  display: flex;
+
+  width: 80%;
+  justify-content: space-between;
+  padding: 100px 25px 70px 25px;
+}
+
+.status-bar__column {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+}
+
+.status-bar__column:first-child {
+  justify-content: flex-start;
+}
+
+.status-bar__column:nth-child(2) {
+  font-weight: 800;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  justify-content: flex-end;
+}
+
+.status-bar__column {
+  width: 33%;
+}
+
+/* 정보창 */
+.info {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px 30px 0px;
+}
+
+.info__cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 160px;
+  height: 160px;
+  background-color: orange;
+}
+.far.fa-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
+.info__song {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 5px 35px;
+}
+.info__song--theme {
+  font-weight: 800;
+  font-size: 55px;
+  padding: 10px 0px;
+}
+.info__song--singer {
+  font-weight: 800;
+  font-size: 20px;
+  padding: 8px 0px 10px 0px;
+}
+
+/* 버튼 */
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  height: 100px;
+  font-weight: 800;
+  margin: 10px 0px;
+}
+
+.btn--play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 20px;
+  box-shadow: 0 5px black;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.btn--play span {
+  padding: 0px 10px;
+  font-size: 30px;
+}
+
+.btn__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 50%;
+  box-shadow: 0 5px black;
+  margin: 0px 10px;
+  width: 100px;
+  height: 100px;
+}
+
+/* 플레이 리스트 */
+.playList {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.playList__row {
+  width: 85%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 15px 10px;
+}
+
+.playList__row__cover {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.playList__row__song {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  padding: 5px 35px;
+}
+
+.playList__row__song--theme {
+  font-weight: 800;
+  font-size: 30px;
+  padding: 5px 0;
+}
+
+.playList__row__song--singer {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.playList__row:first-child .playList__row__cover {
+  background-color: tomato;
+}
+.playList__row:nth-child(2) .playList__row__cover {
+  background-color: palevioletred;
+}
+.playList__row:nth-child(3) .playList__row__cover {
+  background-color: royalblue;
+}
+.playList__row:last-child .playList__row__cover {
+  background-color: turquoise;
+}

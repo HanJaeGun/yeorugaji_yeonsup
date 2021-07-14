@@ -1,0 +1,29 @@
+css
+    [] font-family import 하고 bolf 와 regular 그리고 얇은 거 하나 가져오기
+    [] x 아이콘
+    [] 그림표시 아이콘
+    [] 플레이 아이콘
+    [] 하트 아이콘
+    [] + 아이콘
+
+
+
+body
+    * boder solid 를 사용했을 수도 있고
+    배경색을 주고, 내부의 box가 padding이나 margin을 가졌을 수도 있다.
+    하지만, 그러면 div 박스가 하나 더 늘어나게 되니까 아마 boder 가 더 알맞는 선택인 것 같다.
+
+
+status bar 
+    * 이 자체로 굉장히 두껍다.
+    * flex 인데, jutify-content도 align-items 도 모두 center 인 것 같다.
+    * x icon 과 Playlist colomn 을 갖고 있다.
+
+
+세 부분으로 나눌 수 있을 듯하다. (외부 감싸는 것은 block, 내부는 flex)
+    1. 정보 표기 box
+    2. 버튼들 box
+    3. 리스트들 ⊃ 리스트 개별*5
+
+
+가사이름과 가수 이름, 앨범커버들은 클래스를 두개 적용해서 더 효율적으로 만들 수 있었는데... 간과했다.
